@@ -1,6 +1,10 @@
 .app {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
   padding: 30px;
+  background-color: lavenderblush;
 }
 
 .game {
@@ -14,3 +18,10 @@
   width: 70px;
   height: 70px;
 }
+/* @media (width < 380px) {
+.app {
+  background-color: black;
+  width: fit-content;
+  
+ }
+} */
