@@ -18,6 +18,7 @@ const candyColors = [
   redCandy,
   yellowCandy,
 ];
+
 const App = () => {
   const [currentColorArrangement, setCurrentColorArrangement] = useState([]);
   const [squareBeingDragged, setSquareBeingDragged] = useState(null);
@@ -108,7 +109,8 @@ const App = () => {
 
       if (
         rowOfThree.every(
-          (square) => currentColorArrangement[square] === decidedColor && !isBlank
+          (square) =>
+            currentColorArrangement[square] === decidedColor && !isBlank
         )
       ) {
         setScoreDisplay((score) => score + 3);
