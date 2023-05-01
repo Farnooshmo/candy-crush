@@ -22,10 +22,12 @@ body {
   width: 70px;
   height: 70px;
 }
-/* @media (width < 380px) {
-.app {
-  background-color: black;
-  width: fit-content;
-  
- }
-} */
+@media (width < 400px) {
+  .app {
+    background-color: black;
+  }
+  .game img {
+    width: 44px;
+    height: 44px;
+  }
+}
